@@ -15,7 +15,7 @@ read_globals = {
     -- frames & UI
     "CreateFrame", "UIParent", "GameTooltip", "UISpecialFrames",
     "GameFontNormal", "GameFontHighlight", "BackdropTemplateMixin",
-    "DEFAULT_CHAT_FRAME", "SlashCmdList",
+    "DEFAULT_CHAT_FRAME",
     -- namespaces
     "C_AddOns", "C_Timer", "C_Spell", "C_Item", "C_UnitAuras", "C_Map",
     "C_CombatLog", "C_CVar", "Enum",
@@ -27,6 +27,6 @@ read_globals = {
 
 -- Globals the addon itself defines (saved variables, slash command names).
 globals = {
-    "SLASH_HELLOAZEROTH1", "SLASH_HELLOAZEROTH2",
+    "SlashCmdList", "SLASH_HELLOAZEROTH1", "SLASH_HELLOAZEROTH2",
     "HelloAzerothDB",
 }
