@@ -1,0 +1,10 @@
+## Interface: 120105
+## Title: Hello Azeroth
+## Notes: Starter addon. Type /hello.
+## Author: mluttrull
+## Version: @project-version@
+## SavedVariables: HelloAzerothDB
+## IconTexture: Interface\Icons\INV_Misc_QuestionMark
+## Category: Development Tools
+
+Core.lua

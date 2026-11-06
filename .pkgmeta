@@ -1,0 +1,8 @@
+# BigWigs packager config. One entry per addon folder; the packager zips each.
+package-as: HelloAzeroth
+
+ignore:
+  - README.md
+  - .editorconfig
+  - .luacheckrc
+  - .github

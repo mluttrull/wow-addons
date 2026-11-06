@@ -1,0 +1,10 @@
+# packager output
+.release/
+*.zip
+# editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# WoW writes these next to addons when you dev via symlink
+*.bak

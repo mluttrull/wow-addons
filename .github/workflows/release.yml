@@ -1,0 +1,17 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: BigWigsMods/packager@v2
+        with:
+          # No CurseForge/Wago tokens configured, so only a GitHub release is produced.
+          args: -g retail
+        env:
+          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
