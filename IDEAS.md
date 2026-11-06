@@ -4,6 +4,9 @@ Things that fit Forever's constraints (no combat data, names and health may be s
 your own character, quests, map, bags and chat is open). Roughly ordered by how fun they'd be to build.
 
 - [x] **Travelogue** (`Travelogue/`): auto-journal of level-ups, new zones, dungeons, deaths with gear snapshots and screenshots.
+- [x] **Totem Twister** (`TotemTwister/`): shaman HUD for totems, imbues, shield, Ankh.
+- [ ] **Ankh Watch**: folded into Totem Twister.
+- [ ] **Weather Shaman**: screen flashes and camera rumbles keyed to your own elemental casts. Zero utility, high joy.
 - [ ] **Wanderlust**: pick a random unexplored subzone and give a waypoint arrow with no explanation. Stamp card per zone.
 - [ ] **Campfire Companion**: detect sitting at a cooking fire with others, offer a shared dice/trivia/story game over addon messages.
 - [ ] **Fishing Buddy for Forever**: catches per zone and pool, skill-up thresholds, `PlaySound` cue on bite.

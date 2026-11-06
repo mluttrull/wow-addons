@@ -23,7 +23,8 @@ read_globals = {
     "GetBuildInfo", "UnitName", "UnitClass", "GetRealmName", "InCombatLockdown",
     "GetTime", "IsInInstance", "GetInstanceInfo", "UnitLevel", "GetMoney", "GetZoneText",
     "GetSubZoneText", "GetInventoryItemLink", "Screenshot", "RequestTimePlayed", "SetItemRef",
-    "time", "issecretvalue", "UnitFullName", "PlaySound", "SOUNDKIT", "date", "strsplit", "strtrim", "tinsert", "tremove",
+    "time", "GetTotemInfo", "GetWeaponEnchantInfo", "DestroyTotem", "GetInventoryItemTexture",
+    "UnitClass", "issecretvalue", "UnitFullName", "PlaySound", "SOUNDKIT", "date", "strsplit", "strtrim", "tinsert", "tremove",
     "wipe", "format", "LibStub",
 }
 
@@ -32,4 +33,5 @@ globals = {
     "SlashCmdList", "SLASH_HELLOAZEROTH1", "SLASH_HELLOAZEROTH2",
     "HelloAzerothDB",
     "SLASH_TRAVELOGUE1", "SLASH_TRAVELOGUE2", "TravelogueDB",
+    "SLASH_TOTEMTWISTER1", "SLASH_TOTEMTWISTER2", "TotemTwisterDB",
 }

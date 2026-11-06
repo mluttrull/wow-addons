@@ -1,0 +1,10 @@
+## Interface: 16001
+## Title: Totem Twister
+## Notes: Shaman HUD: totem timers, weapon imbues, shield charges, Ankh count and Reincarnation. /tt
+## Author: mluttrull
+## Version: @project-version@
+## SavedVariables: TotemTwisterDB
+## IconTexture: Interface\Icons\Spell_Nature_WindFury
+## Category: Class
+
+Core.lua

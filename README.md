@@ -2,12 +2,15 @@
 
 A playground for World of Warcraft: Forever addon development. Each top-level folder is one addon.
 
+See `SETUP.md` for the full package: which CurseForge addons to run alongside these.
+
 ## Addons
 
 | Folder | What it does |
 |---|---|
 | `HelloAzeroth/` | Minimal starter: prints on login, `/hello` slash command, saved variables, a draggable frame. Copy it to start a new addon. |
 | `Travelogue/` | Automatic journal of your character: level-ups, first visits to zones and subzones, dungeons, deaths, and `/tlog note` entries. Each entry snapshots level, location, gold, time played and full gear, and can take a screenshot. `/tlog` opens the book. |
+| `TotemTwister/` | Shaman HUD: four totem slots with timers, main and off hand imbue timers, Lightning/Water/Earth Shield charges, Ankh count and Reincarnation cooldown. Flashes and plays a sound when something is about to drop. `/tt` for options. |
 
 ## The Forever client in one paragraph
 
