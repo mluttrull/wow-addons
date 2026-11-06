@@ -2,16 +2,27 @@ name: release
 on:
   push:
     tags: ["v*"]
+permissions:
+  contents: write
 jobs:
   package:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Zip each addon folder
+        run: |
+          set -e
+          VERSION="${GITHUB_REF_NAME#v}"
+          mkdir -p dist
+          for dir in */; do
+            name="${dir%/}"
+            [ -f "$name/$name.toc" ] || continue
+            rm -rf "dist/$name" && cp -r "$name" "dist/$name"
+            sed -i "s/@project-version@/$VERSION/g" "dist/$name/$name.toc"
+            (cd dist && zip -qr "$name-$VERSION.zip" "$name")
+            echo "packaged $name-$VERSION.zip"
+          done
+      - uses: softprops/action-gh-release@v2
         with:
-          fetch-depth: 0
-      - uses: BigWigsMods/packager@v2
-        with:
-          # Forever game version is 1.60.1 (Interface 16001). No CurseForge/Wago tokens, so only a GitHub release is produced.
-          args: -g 1.60.1
-        env:
-          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+          files: dist/*.zip
+          generate_release_notes: true

@@ -7,6 +7,7 @@ A playground for World of Warcraft: Forever addon development. Each top-level fo
 | Folder | What it does |
 |---|---|
 | `HelloAzeroth/` | Minimal starter: prints on login, `/hello` slash command, saved variables, a draggable frame. Copy it to start a new addon. |
+| `Travelogue/` | Automatic journal of your character: level-ups, first visits to zones and subzones, dungeons, deaths, and `/tlog note` entries. Each entry snapshots level, location, gold, time played and full gear, and can take a screenshot. `/tlog` opens the book. |
 
 ## The Forever client in one paragraph
 
@@ -44,7 +45,7 @@ luarocks install luacheck
 luacheck .
 ```
 
-CI runs luacheck on every push and packages a release zip with the BigWigs packager when you push a tag like `v0.1.0`.
+CI runs luacheck on every push. Pushing a tag like `v0.1.0` zips every addon folder, substitutes `@project-version@` in the TOC, and attaches the zips to a GitHub release.
 
 ## Reference
 

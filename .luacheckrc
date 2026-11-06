@@ -21,7 +21,9 @@ read_globals = {
     "C_CombatLog", "C_CVar", "Enum",
     -- misc globals
     "GetBuildInfo", "UnitName", "UnitClass", "GetRealmName", "InCombatLockdown",
-    "GetTime", "IsInInstance", "issecretvalue", "UnitFullName", "PlaySound", "SOUNDKIT", "date", "strsplit", "strtrim", "tinsert", "tremove",
+    "GetTime", "IsInInstance", "GetInstanceInfo", "UnitLevel", "GetMoney", "GetZoneText",
+    "GetSubZoneText", "GetInventoryItemLink", "Screenshot", "RequestTimePlayed", "SetItemRef",
+    "time", "issecretvalue", "UnitFullName", "PlaySound", "SOUNDKIT", "date", "strsplit", "strtrim", "tinsert", "tremove",
     "wipe", "format", "LibStub",
 }
 
@@ -29,4 +31,5 @@ read_globals = {
 globals = {
     "SlashCmdList", "SLASH_HELLOAZEROTH1", "SLASH_HELLOAZEROTH2",
     "HelloAzerothDB",
+    "SLASH_TRAVELOGUE1", "SLASH_TRAVELOGUE2", "TravelogueDB",
 }

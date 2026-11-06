@@ -27,8 +27,9 @@ Playground repo for **World of Warcraft: Forever** addons. One addon per top-lev
 
 - Lint: `luacheck .` (config in `.luacheckrc`; add new WoW globals there as you use them).
 - Test in game: symlink the addon folder into `_forever_/Interface/AddOns/`, restart once, then `/reload` after edits. Enable errors with `/console scriptErrors 1`.
-- New addon: copy `HelloAzeroth/`, rename the folder and `.toc`, update `package-as` in `.pkgmeta`.
-- Releases: push a `v*` tag; `.github/workflows/release.yml` runs the BigWigs packager with `-g 1.60.1` and attaches a zip to a GitHub release.
+- New addon: copy `HelloAzeroth/`, rename the folder and `.toc`, add its slash/SavedVariables globals to `.luacheckrc`, add a row to the README table.
+- Releases: push a `v*` tag; `.github/workflows/release.yml` zips every folder that has a matching `.toc` and attaches them to a GitHub release. `@project-version@` in a TOC becomes the tag.
+- `Travelogue/` is the first real addon. `Core.lua` records entries, `UI.lua` is the book. Entries are plain tables in `TravelogueDB.entries`; keep them free of secret values and frame references so they serialize.
 
 ## References
 

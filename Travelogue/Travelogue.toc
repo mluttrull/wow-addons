@@ -1,0 +1,11 @@
+## Interface: 16001
+## Title: Travelogue
+## Notes: An automatic journal of your character's journey: level-ups, new zones, dungeons, deaths, with gear snapshots and screenshots. /tlog
+## Author: mluttrull
+## Version: @project-version@
+## SavedVariablesPerCharacter: TravelogueDB
+## IconTexture: Interface\Icons\INV_Misc_Book_09
+## Category: Roleplay
+
+Core.lua
+UI.lua
