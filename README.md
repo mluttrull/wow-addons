@@ -28,6 +28,7 @@ pick WoW Forever above Play, then the gear icon, then Show in Explorer / Finder.
 
 The easiest dev loop is a symlink from the game folder to this repo, then `/reload` in game after each edit.
 New addon folders are only discovered at client start, so restart once after creating one.
+`tools/install.ps1` (Windows) and `tools/install.sh` (macOS) create the symlinks for every addon in the repo.
 
 ```powershell
 # Windows (elevated PowerShell)
