@@ -1,6 +1,6 @@
-## Interface: 120105
+## Interface: 16001
 ## Title: Hello Azeroth
-## Notes: Starter addon. Type /hello.
+## Notes: Starter addon for WoW Forever. Type /hello.
 ## Author: mluttrull
 ## Version: @project-version@
 ## SavedVariables: HelloAzerothDB

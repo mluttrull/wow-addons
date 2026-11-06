@@ -21,7 +21,7 @@ read_globals = {
     "C_CombatLog", "C_CVar", "Enum",
     -- misc globals
     "GetBuildInfo", "UnitName", "UnitClass", "GetRealmName", "InCombatLockdown",
-    "GetTime", "IsInInstance", "date", "strsplit", "strtrim", "tinsert", "tremove",
+    "GetTime", "IsInInstance", "issecretvalue", "UnitFullName", "PlaySound", "SOUNDKIT", "date", "strsplit", "strtrim", "tinsert", "tremove",
     "wipe", "format", "LibStub",
 }
 

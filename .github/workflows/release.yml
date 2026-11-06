@@ -11,7 +11,7 @@ jobs:
           fetch-depth: 0
       - uses: BigWigsMods/packager@v2
         with:
-          # No CurseForge/Wago tokens configured, so only a GitHub release is produced.
-          args: -g retail
+          # Forever game version is 1.60.1 (Interface 16001). No CurseForge/Wago tokens, so only a GitHub release is produced.
+          args: -g 1.60.1
         env:
           GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}

@@ -43,9 +43,19 @@ local function CreateMainFrame()
     return f
 end
 
+-- On Forever, unit names (even your own) can arrive as secret values. Formatting a
+-- secret string into another string throws, so fall back to a plain word.
+local function SafeName(unit)
+    local name = UnitName(unit)
+    if name == nil or (issecretvalue and issecretvalue(name)) then
+        return "adventurer"
+    end
+    return name
+end
+
 local function UpdateFrameText()
     if not ns.frame then return end
-    ns.frame.text:SetText(format("Hello, %s! Greeted %d times.", UnitName("player"), ns.db.greetings))
+    ns.frame.text:SetText(format("Hello, %s! Greeted %d times.", SafeName("player"), ns.db.greetings))
 end
 
 ---------------------------------------------------------------------------
