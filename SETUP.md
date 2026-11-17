@@ -34,9 +34,38 @@ WowUp (beta releases support Forever) so updates keep coming.
 | **SkillUp Forever** | Skill-up chances and shopping lists in the Professions window. |
 | **Forever Windows** | Drag any Blizzard window and have it stay there. |
 
+### Polestar, in wander mode
+Polestar is a full 1-60 leveling guide with quest automation, which is the opposite of wandering. But its Lookup,
+Dungeons and Rares pages are reference tools, not a leash, and they're worth having. GPL-3, by Fitz (0xfitz).
+
+Install: CurseForge app, search "Polestar Guides". Or unzip `Polestar-<version>.zip` from the GitHub release
+Assets (not "Source code") so the `Polestar`, `Polestar_Guides`, `Polestar_Codex` and `Polestar_Nav` folders sit
+directly in `_forever_/Interface/AddOns/`. Skip the Polestar Client app and the `Polestar_Recorder` addon unless you
+want to upload your play data; without the Client the recorder stays off.
+
+After first login, open `/ps options` and turn these off so it stops driving:
+
+| Page | Setting | Set to |
+|---|---|---|
+| Questing | Accept guide quests, Turn in guide quests | Off |
+| Questing | Skip single-option gossip, Pick what the step asks for | Off (read the NPCs) |
+| Questing | Take the best reward, Wear reward upgrades | Off (already default) |
+| Quality of Life | Faster auto-loot, auto-sell, training | your call |
+| Guide window | Close the guide tab, or `/ps hide` | hidden |
+| Alerts | Dungeons heads-up card | Off unless you like being told a dungeon opened up |
+
+Then use it as a reference:
+
+- `/ps lookup <thing>` answers "how do I get that" for items, mounts, pets, NPCs, quests, zones.
+- `/ps dungeons` has a page per dungeon with every quest, chain and reward. "Pick up the quests" builds a one-off guide to collect them before a run.
+- `/ps rares` lists rares and treasures by zone, and alerts when one is near.
+- `/ps mount` names the mount of whoever you're pointing at and where it comes from.
+- `/ps xp`, `/ps bags`, `/ps restock` are handy one-liners.
+- Shift held while talking to an NPC skips any automation you left on, once.
+
 ### Skipped on purpose
 ElvUI / EllesmereUI / ForeverPlus / ForeverForge (full suites, replace too much), RestedXP and other route guides
-(the point is to wander), damage meters (Forever has one built in and the API hides the numbers anyway).
+(the point is to wander; Polestar's guide engine counts, see above for using only its reference side), damage meters (Forever has one built in and the API hides the numbers anyway).
 
 ## From this repo
 | Addon | Status |
